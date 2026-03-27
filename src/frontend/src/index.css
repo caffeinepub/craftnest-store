@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* CraftNest brand tokens */
+    /* #F5E9DB warm cream */
+    --cn-cream: 0.924 0.031 61;
+    /* #E6A08F peach/salmon */
+    --cn-peach: 0.726 0.097 37;
+    /* #2E2A27 charcoal */
+    --cn-charcoal: 0.215 0.018 48;
+    /* #F4D7CF blush */
+    --cn-blush: 0.879 0.043 27;
+    /* #D8E6DC sage */
+    --cn-sage: 0.893 0.03 152;
+    /* #DCD4F0 lavender */
+    --cn-lavender: 0.866 0.044 285;
+    /* #E8E1D6 beige */
+    --cn-beige: 0.906 0.016 67;
+    /* #F2E4D4 footer cream */
+    --cn-footer: 0.91 0.038 61;
+
+    /* Semantic tokens mapped to CraftNest palette */
+    --background: 0.924 0.031 61; /* warm cream */
+    --foreground: 0.215 0.018 48; /* charcoal */
+    --card: 1 0 0; /* white */
+    --card-foreground: 0.215 0.018 48;
+    --popover: 1 0 0;
+    --popover-foreground: 0.215 0.018 48;
+    --primary: 0.726 0.097 37; /* peach */
+    --primary-foreground: 1 0 0; /* white text on peach */
+    --secondary: 0.906 0.016 67; /* beige */
+    --secondary-foreground: 0.215 0.018 48;
+    --muted: 0.91 0.038 61; /* footer cream */
+    --muted-foreground: 0.52 0.025 60;
+    --accent: 0.879 0.043 27; /* blush */
+    --accent-foreground: 0.215 0.018 48;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 1 0 0;
+    --border: 0.868 0.026 57; /* warm border */
+    --input: 0.868 0.026 57;
+    --ring: 0.726 0.097 37; /* peach focus ring */
+    --chart-1: 0.726 0.097 37;
+    --chart-2: 0.893 0.03 152;
+    --chart-3: 0.866 0.044 285;
+    --chart-4: 0.879 0.043 27;
+    --chart-5: 0.906 0.016 67;
+    --sidebar: 0.91 0.038 61;
+    --sidebar-foreground: 0.215 0.018 48;
+    --sidebar-primary: 0.726 0.097 37;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.906 0.016 67;
+    --sidebar-accent-foreground: 0.215 0.018 48;
+    --sidebar-border: 0.868 0.026 57;
+    --sidebar-ring: 0.726 0.097 37;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Lato", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+  .font-sans {
+    font-family: "Lato", system-ui, sans-serif;
+  }
+}
